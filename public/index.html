@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload</title>
+    <title>CodePen - Pure CSS File Upload Field</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
+<!-- partial:index.partial.html -->
 <div class="container">
-    <h1>File Upload</h1>
-
-    <!--Create a form to send the file to a route  "upload"-->
-    <!--Set the request method to POST-->
-    <!--Set the encytype to "multipart/form-data" in order to send files and not just text-->
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <div class="file-field input-field">
-            <div class="btn grey">
-                <input type="file" name="uploaded_file">
-            </div>
+    <form class="form">
+        <p>Upload Success</p>
+        <div class="file-upload-wrapper" data-text="Select your file!">
+            <input name="uploaded_file" type="file" class="file-upload-field" value="">
         </div>
-
-        <button class="btn" type="submit">Submit</button>
+        <button id="submit-btn" type="submit">Upload</button>
 
     </form>
 </div>
-</body>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 
+</body>
 </html>
