@@ -34,9 +34,6 @@ body {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  /*background-color: #bf7a6b;*/
-  /*background-image: -webkit-linear-gradient(bottom left, #bf7a6b 0%, #e6d8a7 100%);*/
-  /*background-image: linear-gradient(to top right,#bf7a6b 0%, #e6d8a7 100%);*/
   background-image: url("./bg.jpg");
   background-size: cover;
 }
@@ -135,13 +132,9 @@ form p{
   text-align: center;
 
 }
-form p{
-  /*animation:blinkingText 4s infinite;*/
-}
+
 @keyframes blinkingText{
   0%{		color: #65ff29;	}
-  /*49%{	color: transparent;	}*/
-  /*50%{	color: transparent;	}*/
   99%{	color:transparent;	}
   100%{	color: #65ff29;	}
 }
