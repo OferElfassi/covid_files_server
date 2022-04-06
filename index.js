@@ -31,7 +31,6 @@ app.post('/upload', async (req, res) => {
 });
 
 app.use(express.static("public"))
-// Create the server and let it run on the port 3001
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })
