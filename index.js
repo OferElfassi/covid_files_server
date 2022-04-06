@@ -20,7 +20,7 @@ var upload = multer({ storage: storage }).single('uploaded_file');
 app.post('/upload', async (req, res) => {
     upload(req, res, function (err) {
         if (err) {
-            res.status(200).send("Upload failed");
+            res.status(400).send("Upload failed");
         } else {
             var FileName = req.file.filename;
             res.status(200).send(FileName);
